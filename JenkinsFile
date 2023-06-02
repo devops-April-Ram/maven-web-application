@@ -3,7 +3,7 @@ def mavenHome= tool name: 'Ramesh'
 
 echo "Job name is: $JOB_NAME"
 echo "Node name is: $NODE_NAME"
-echo "jenkins home url: $JENKINS_HOME
+echo "jenkins home url: $JENKINS_HOME"
 
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '10', daysToKeepStr: '10', numToKeepStr: '10')), pipelineTriggers([pollSCM('* * * * *')])])
 stage('CheckoutCode'){
